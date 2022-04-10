@@ -1,0 +1,57 @@
+
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    z-index: 20;
+}
+
+
+.topNavBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavBar-brand {
+    max-width: 150px;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+.topNavBar ul {
+   padding-right: 30px;
+
+}
+
+.topNavBar-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+
+@media (max-width: 844px) {
+    .logoImg {
+        width: 70%;
+    }
+    .topNavBar {
+        display: block;
+    }
+    .header {
+        text-align: -webkit-center;
+    }
+    .decoreImg {
+        max-width: none;
+    }
+    .title-decore {
+        position: absolute;
+    }
+    .barra-de-busqueda {
+        width: 100%;
+        text-align: -webkit-match-parent;
+    }
+}
