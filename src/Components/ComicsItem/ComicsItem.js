@@ -6,22 +6,20 @@ import "../Series/series.css"
 
 export function ComicsItem({comic}) {
 
-    const { id, title} = comic;
-    const path = comic.thumbnail['path'];
 
 
     return (
         <div className="experience-card">
             <div>
-               <Link to={`/comics/${id}`}>
-                   <img src={`${path}/standard_fantastic.jpg`} className="image" alt="Image of Experience"/>
+               <Link to={`/comic/${comic.id}`}>
+                   <img src={`${comic.thumbnail.path}/standard_fantastic.jpg`} className="image" alt="Image of Experience"/>
                </Link>
             </div>
 
             <table className="experience-table">
                 <tbody>
                     <tr>
-                        <td>{title}</td>
+                        <td>{comic.title}</td>
                     </tr>
                 </tbody>
             </table>

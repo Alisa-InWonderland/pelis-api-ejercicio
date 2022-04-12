@@ -16,7 +16,7 @@ export function Series({series}) {
 
                 <div className="container-card">
                     {series.map((serie) => {
-                        return <SeriesItem key={serie.id} serie={serie}/>;
+                        return <SeriesItem serie={serie}/>;
                     })}
                 </div>
 

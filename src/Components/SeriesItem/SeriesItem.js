@@ -7,22 +7,19 @@ import "../Series/series.css"
 
 export function SeriesItem({serie}) {
 
-    const { id, title } = serie;
-    const path = serie.thumbnail['path'];
-
 
     return (
         <div className="experience-card">
             <div>
-                <Link to={`/series/${id}`}>
-                        <img src={`${path}/standard_fantastic.jpg`} className="image" alt="Image of Experience"/>
+                <Link to={`/serie/${serie.id}`} title={serie.title}>
+                        <img src={`${serie.thumbnail.path}/standard_fantastic.jpg`} className="image" alt="Image of Serie"/>
                 </Link>
             </div>
 
             <table className="experience-table">
                 <tbody>
                     <tr>
-                        <td>{title}</td>
+                        <td>{serie.title}</td>
                     </tr>
                 </tbody>
             </table>

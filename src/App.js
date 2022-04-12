@@ -8,6 +8,7 @@ import {getSeries} from "./services/getSeries";
 import {getComics} from "./services/getComics";
 import {Comics} from "./Components/Comics/Comics";
 import {SeriesDetails} from "./Components/SeriesDetails/SeriesDetails";
+import {ComicDetails} from "./Components/ComicDetails/ComicDetails";
 
 
 
@@ -44,7 +45,8 @@ function App() {
             <Route path="/" element={<Series series={series}/>}/>
             <Route path="/series" element={<Series series={series}/>}/>
             <Route path="/comics" element={<Comics comics={comics}/>}/>
-            <Route path="/series/:id" element={<SeriesDetails />}/>*/}
+            <Route path="/serie/:id" element={<SeriesDetails />}/>
+            <Route path="/comic/:id" element={<ComicDetails />}/>
           </Routes>
         </main>
         <Footer/>

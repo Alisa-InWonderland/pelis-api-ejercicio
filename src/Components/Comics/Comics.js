@@ -16,7 +16,7 @@ export function Comics({comics}) {
 
                 <div className="container-card">
                     {comics.map((comic) => {
-                        return <ComicsItem key={comic.id} comic={comic}/>;
+                        return <ComicsItem comic={comic}/>;
                     })}
                 </div>
 
